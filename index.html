@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="Cnote">
+  <head>
+    <meta charset="utf-8">
+    <title>🚦route-app</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+  </head>
+  <body ng-controller="myCtrl">
+
+<ui-view></ui-view>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+<script src="./app.js"></script>
+<script src="./states/home/homeCtrl.js"></script>
+<script src="./states/compose/composeCtrl.js"></script>
+<script src="./states/reader/readerCtrl.js"></script>
+<script src="secondCtrl.js"></script>
+
+<!-- NB You don't need to link your .html files -->
+  </body>
+</html>

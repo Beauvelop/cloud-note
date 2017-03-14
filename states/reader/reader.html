@@ -1,0 +1,25 @@
+<div class="reader-wrapper">
+  <img class='reader-img' src="./img/paper2.jpg" alt="paper background">
+
+  <div class="topLogo-wrapper">
+    <img class="vidlink" src="./../../img/tv.png" alt="vidlinkLogo">
+    <img class="logoBtn" src="./../../img/c-noteLogo.svg" alt="logoBtn">
+  </div>
+
+    <section class="reader-section" ng-controller="readerCtrl">
+      <div class="reader-title">
+        <h1>Hello {{title}}</h1>
+      </div>
+      <div class="reader-content-div">
+        <h1>{{title}}</h1>
+      </div>
+
+      <p>{{msg}}</p>
+    </section>
+
+    <nav class="reader-nav">
+      <h5 class="reader-h5"><a ui-sref="compose"> compose</a></h5>
+      <h5 class="reader-h5"><a ui-sref="reader({id: readerParam})"> reader</a></h5>
+      <h5 class="reader-h5"><a ui-sref="home"> home</a></h5>
+    </nav>
+</div>

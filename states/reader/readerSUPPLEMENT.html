@@ -1,0 +1,31 @@
+<div class="reader-bg">
+  
+
+<h2 class="teal">This is reader.html</h2>
+<h4>{{msg}}</h4><br><br>
+
+<div class="readerBox">
+  <h5><a ui-sref="compose"> compose</a></h5>
+  <h5><a ui-sref="reader({id: readerParam})"> reader</a></h5>
+  <h5><a ui-sref="home"> home</a></h5>
+
+
+<br><br>
+
+
+
+</div>
+One important thing compose reader <br>
+because of the /:id --it, of course, takes a parameter.
+
+<p>< a ui-sref="<span class="sand">reader(<span  class="teal">{}</span>)</span>"> reader< /a></p>
+
+<br>In a link that takes a param, the object that is sent in the call is the $stateParam --one that was specified in the .config file.<br>
+<p>< a ui-sref="<span class="sand">reader(<span  class="teal">{id: 'default reader param'}</span>)</span>"> reader< /a></p> NB: set the param as a string!
+
+<ul>
+  <li>So I go to home</li>
+  <li>put in an input box with an ng-model="readerParam"</li>
+  <li>and then... in the ui-sref="reader({id: readerParam})"...</li>
+</ul>
+</div>
