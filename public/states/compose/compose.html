@@ -1,0 +1,47 @@
+<!-- <img class="navback" src="./img/navback2.png" alt="navback"> -->
+<div class="compose-wrapper">
+    <div class="topLogo-wrapper">
+        <img class="composeCloud menuCloud" src="./../../img/c-noteLogo.svg" alt="logoBtn">
+    </div>
+
+    <form class="compose-form" ng-controller="composeCtrl" ng-submit="submitForm(compose)">
+        <div class="top-compose-row">
+            <input class="compose-title" type="text" placeholder="Title" ng-model="compose.title" required>
+
+            <input class="desk-compose-vidLink" type="text" placeholder="Video link" ng-model="compose.vidlink" required>
+        </div>
+        <div class="mid-compose-row">
+            <textarea class="compose-content" type="text" cols="30" rows="25" placeholder="Compose Note..." ng-model="compose.content" required></textarea>
+        </div>
+        <div class="bot-compose-row">
+
+
+            <div class="bot-compose-col-left">
+                <!-- tags -->
+                <input class="compose-tag" type="text" placeholder="tag1" ng-model="compose.tag1" required>
+                <input class="compose-tag tag2" type="text" placeholder="tag2" ng-model="compose.tag2">
+            </div>
+            <!-- links -->
+
+            <div class="bot-compose-col-right">
+                <input class="compose-refLink" type="text" placeholder="reference URL" ng-model="compose.link1">
+                <input class="compose-refLink" type="text" placeholder="reference URL" ng-model="compose.link2">
+            </div>
+
+            <!-- below hidden on desktop -->
+            <div class="mobile-compose-links">
+                <input class="compose-tag" type="text" placeholder="tag1" ng-model="compose.tag1" required>
+                <input class="mobile-compose-vidLink" type="text" placeholder="video link" ng-model="compose.vidlink">
+            </div>
+
+        </div>
+        <div class="comp-btn-row">
+            <button class="fav-btn" type="button" name="button" ng-click="isFav()">favorite</button>
+            <button class="compose-submit" type="submit" name="button">SAVE</button>
+        </div>
+    </form>
+</div>
+<script src="myScripts.js"></script>
+<!--
+/*XXX This could be useful instead of textarea */
+ <input class="compose-content" type="text" placeholder="Compose Note" ng-model="compose.content"> -->

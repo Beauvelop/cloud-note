@@ -1,0 +1,17 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg" 
+
+  viewBox="200 130 400 300">
+  <linearGradient id="a" x1="367.709" x2="423.158" y1="223.161" y2="404.526" gradientUnits="userSpaceOnUse">
+    <stop offset=".182" stop-color="#FFF" stop-opacity=".5"/>
+    <stop offset=".335" stop-color="#FAFAFA" stop-opacity=".6"/>
+    <stop offset=".599" stop-color="#EBEBEB" stop-opacity=".65"/>
+    <stop offset=".669" stop-color="#D3D3D3" stop-opacity=".425"/>
+    <stop offset=".742" stop-color="#B1B1B1" stop-opacity=".553"/>
+    <stop offset=".769" stop-color="#858585" stop-opacity=".686"/>
+    <stop offset=".9" stop-color="#121212" stop-opacity=".963"/>
+    <stop offset="1"/>
+  </linearGradient>
+  <path fill="url(#a)" stroke="#666"  stroke-width="5px" stroke-miterlimit="10" d="M401 400.7c-32.1 0-64.6-13.4-64.6-26.6l-.1.2c-13.8 6.3-47.6 12.5-90.1-16.2-44.4-35.6 11.7-86.7 59.5-77.3l-.1-.3c-9.5-30.2 21.5-60.4 65.5-43.4 0-11.3 14.7-22.6 29.3-22.6h-.9c14.6 0 29.3 11.2 29.3 22.6 44-17 74.9 13.3 65.4 43.5l-.1.3c47.7-9.4 103.8 41.6 59.4 77.3-42.4 28.7-76.1 22.5-89.9 16.2l-.1-.2c0 13.2-32.4 26.6-64.4 26.6"/>
+
+</svg>

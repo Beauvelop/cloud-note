@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app="Cnote">
+  <head>
+    <meta charset="utf-8">
+    <title>🚦route-app</title>
+    <link id="sheet" rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+  </head>
+
+  <body ng-controller="myCtrl">
+    <ui-view></ui-view>
+    <!-- Include YT library and this directive -->
+
+
+    <img class="navback" src="./img/navback2.png" alt="navback">
+      <div class="cloud-bg-container">
+          <img class='cloud-img' src="./img/bg.png" alt="cloud bg">
+      </div>
+
+      <nav class="nav-menu">
+        <h5 class="home"><a ui-sref="home">home</a></h5>
+        <h5 class="read"><a ui-sref="reader">reader</a></h5>
+        <h5 class="comp"><a ui-sref="compose">compose</a></h5>
+        <h5 class="search"><a ui-sref="search">search</a></h5>
+        <h5 class="login"><a href="/api/auth">login</a></h5>
+        <h5 class="logout"><a href="/api/logout">logout</a></h5>
+    </nav>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+
+
+<script src="./app.js"></script>
+<script src="./states/home/homeCtrl.js"></script>
+<script src="./states/compose/composeCtrl.js"></script>
+<script src="./states/reader/readerCtrl.js"></script>
+<script src="./states/reader/readerServ.js"></script>
+<script src="./states/reader/youtubeCtrl.js"></script>
+<script src="./states/search/searchCtrl.js"></script>
+<!-- <script src="./states/login/loginCtrl.js"></script> -->
+<script src="./states/search/searchService.js"></script>
+<script src="./service.js"></script>
+<script src="./mainctrl.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="youtubeEmbed.js"></script>
+
+
+<!-- <script src="myScripts.js"></script> -->
+<!--NOTE: for some reason keep this script out of index! -->
+<script>
+$(function () {
+  let sheet = $('#variableStyles');
+
+/*
+let ww = $(window).width()
+console.log("Windowwidth: ", ww)
+
+      function adjustStyle(width) {
+        console.log("in adj style")
+        width = parseInt(width);
+        if (width < 568) {
+          console.log("smaller than 256")
+          console.log("width: ", width)
+
+
+        } else {
+          console.log("width: ", width)
+
+          console.log("< 256")
+        }
+      }
+
+      $(function() {
+        adjustStyle($(this).width());
+        $(window).resize(function() {
+          adjustStyle($(this).width());
+        });
+      });
+*/
+});
+
+</script>
+</body>
+
+</html>

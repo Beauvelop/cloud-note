@@ -1,0 +1,28 @@
+<div class="reader-wrapper" ng-controller="readerCtrl">
+  <div class="topLogo-wrapper">
+    <a class="vidurl" href="{{response.vidlink}}">
+      <img class="vidlink" src="./../../img/tv.png" alt="vidlinkLogo">
+    </a>
+    <img class="readerCloud menuCloud" src="./../../img/c-noteLogo.svg" alt="logoBtn">
+  </div>
+  <img class="reader-img" src="./img/paper2.jpg" alt="paper background">
+
+
+  <section class="reader-section" >
+    <div class="reader-title">
+      <h1 class="reader-title">{{response.title}}</h1>
+    </div>
+
+    <div class="reader-content">
+      <h1>{{response.content}}</h1>
+    </div>
+  </section>
+  <aside class="video-container" ng-controller="youtubeCtrl">
+<!-- <iframe width="560" height="315" ng-src="{{'trustedVid'}}" frameborder="0" allowfullscreen></iframe> -->
+<hr>
+Vid Container
+<youtube-video class="myVideo" video-id="'{{vidID}}'"></youtube-video>
+  </aside>
+</div>
+<script src="myScripts.js"></script>
+<!-- <script src="youtubeEmbed.js"></script> -->

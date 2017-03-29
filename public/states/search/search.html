@@ -1,0 +1,21 @@
+
+<div class="search-wrapper" ng-controller="searchCtrl">
+  <div class="topLogo-wrapper">
+    <img class="searchCloud menuCloud" src="./../../img/c-noteLogo.svg" alt="logoBtn">
+  </div>
+    <form class="search-form">
+        <input class="searchInput" type="text" placeholder="search" ng-model="srchTerm" required>
+        <button class="searchButton" type="button" name="button" ng-click="getResults(srchTerm)">🔎</button>
+    </form>
+
+
+            <div class="search-row-mid">
+              <h1 class="search-h1">Titles: </h1>
+                <h2 class="search-results" ng-repeat="results in response" ui-sref="reader({id: results.note_id})"> {{results.title}}<br></h2>
+
+                <!-- <span id="idtest">NOTE ID:{{results.note_id}}</span> -->
+            </div>
+
+</div>
+
+<script src="myScripts.js">

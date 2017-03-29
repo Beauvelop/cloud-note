@@ -1,0 +1,15 @@
+module.exports = {
+PORT: 3000 || process.env.PORT,
+//mongo-labs//
+
+
+}
+
+
+
+COMMENT OUT ALL CORS! HEROKU DOESN'T LIKE IT!
+heroku toolbelt
+
+Git init heroku create
+
+git push heroku master
